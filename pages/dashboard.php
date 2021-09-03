@@ -12,7 +12,7 @@ $personsCount = $row[0];
 <?php include_once('../components/header.php') ?>
 
 <style>
- <?php include_once('../assets/css/bootstrap.css') ?><?php include_once('../assets/css/index.css') ?>
+ <?php include_once('../assets/css/bootstrap.css') ?>
 </style>
 
 <div class="container ">
@@ -20,7 +20,7 @@ $personsCount = $row[0];
   <div class="col-sm-6 mt-5">
    <nav class="navbar navbar-expand-lg bg-dark rounded mt-5" style="box-shadow:3px 3px 4px rgba(0,0,0,0.2);">
     <ul class="navbar-nav mb-2 mb-lg-0">
-     <li><a href="/pages/dashboard/" class="nav-link active text-secondary">Home</a></li>
+     <li><a href="/pages/dashboard/" class="nav-link active text-primary">Home</a></li>
      <li><a href="/pages/add/" class="nav-link active text-white">Add</a></li>
      <li><a href="/pages/update/" class="nav-link active text-white">Update</a></li>
      <li><a href="/pages/view/" class="nav-link active text-white">View All</a></li>

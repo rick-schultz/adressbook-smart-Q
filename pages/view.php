@@ -23,7 +23,7 @@ $personsCount = $row[0];
      <li><a href="/pages/dashboard/" class="nav-link active text-white">Home</a></li>
      <li><a href="/pages/add/" class="nav-link active text-white">Add</a></li>
      <li><a href="/pages/update/" class="nav-link active text-white">Update</a></li>
-     <li><a href="/pages/view/" class="nav-link active text-secondary">View All</a></li>
+     <li><a href="/pages/view/" class="nav-link active text-primary">View All</a></li>
      <li><a href="/pages/logout.php" class="nav-link active text-white">Logout</a></li>
     </ul>
    </nav>

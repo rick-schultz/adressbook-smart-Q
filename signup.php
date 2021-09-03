@@ -20,7 +20,7 @@ if (isset($_SESSION['UID'])) {
       <label>First Name</label>
       <input type="text" class="form-control" name="fn" id="fn" autocomplete="off" />
     </div>
-    <div class="form-group mt-3 mb-3">
+    <div class="form-group mt-3 mb-2">
       <label>Last Name</label>
       <input type="text" class="form-control" name="ln" id="ln" autocomplete="off" />
     </div>
@@ -33,12 +33,15 @@ if (isset($_SESSION['UID'])) {
       <input type="password" class="form-control" name="password" id="password" autocomplete="off" />
     </div>
 
-    <div class="row mt-3 mb-3">
+    <div class="row mt-2">
       <div class="col-sm-6">
         <input type="submit" value="Register" name="submit" class="btn btn-primary" id="regBtn" />
       </div>
       <div class="col-sm-6">
         <input type="button" value="Back" class="btn btn-primary " id="resetBtn" onclick="window.location.href='/'" />
+      </div>
+      <div class="mt-4 mb-1 text-center">
+        <p class="">&#169; Rick Schultz</p>
       </div>
   </form>
 </div>

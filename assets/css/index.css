@@ -1,8 +1,29 @@
+@media screen and (min-width:460px) {
+ .login-dark form {
+ max-width: 70%;
+}}
+
+@media screen and (min-width:700px) {
+ .login-dark form {
+ max-width: 50%;
+}}
+
+@media screen and (min-width:900px) {
+ .login-dark form {
+ max-width: 40%;
+}}
+
+@media screen and (min-width:1300px) {
+ .login-dark form {
+ max-width: 27%;
+}}
+
 .login-dark form {
- max-width:27%;
  width:90%;
  background-color:#1e2833;
- padding:40px;
+ padding-top:3%;
+ padding-left:3%;
+ padding-right:3%;
  border-radius:4px;
  transform:translate(-50%, -50%);
  position:absolute;

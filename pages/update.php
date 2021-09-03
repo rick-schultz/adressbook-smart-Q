@@ -92,7 +92,7 @@ $personsCount = $row[0];
         </div>
         <div class="row mt-3 mb-3">
           <div class="col-sm-3">
-            <label>Permanant Address</label>
+            <label>Address</label>
           </div>
           <div class="form-group col-sm-8">
             <input type="text" class="form-control" name="updatepermanant" id="updatepermanant" autocomplete="off" />
@@ -100,7 +100,7 @@ $personsCount = $row[0];
         </div>
         <div class="row mt-3 mb-3">
           <div class="col-sm-3">
-            <label>Temporary Address</label>
+            <label>Postal Code</label>
           </div>
           <div class="form-group col-sm-8">
             <input type="text" class="form-control" name="updatetemporary" id="updatetemporary" autocomplete="off" />

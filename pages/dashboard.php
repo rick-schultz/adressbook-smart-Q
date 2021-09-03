@@ -38,8 +38,8 @@ $personsCount = $row[0];
         <th>Name</th>
         <th>Mobile</th>
         <th>Email</th>
-        <th>Permanent Address</th>
-        <th>Temporary Address</th>
+        <th>Address</th>
+        <th>Postal Code</th>
         <th>Action</th>
       </tr>
     </thead>

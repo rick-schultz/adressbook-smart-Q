@@ -29,11 +29,10 @@ $personsCount = $row[0];
       </nav>
     </div>
   </div>
-
+  <div class="mt-3 mb-3">
+    <h4 class="font text-black-50">Welcome to your address book, <?php echo $_SESSION['First_Name'] . ' ' . $_SESSION['Last_Name']; ?>!</h4>
+  </div>
   <table class="table table-condensed table-responsive text-white mt-2">
-    <div class="mt-3 mb-3">
-      <h4 class="font text-black-50">Welcome to your address book, <?php echo $_SESSION['First_Name'] . ' ' . $_SESSION['Last_Name']; ?>!</h4>
-    </div>
     <thead>
       <tr class="text-black-50">
         <th>Name</th>
@@ -55,14 +54,43 @@ $personsCount = $row[0];
 						<td>' . $row['Email'] . '</td>
 						<td style="word-wrap:break-word;">' . $row['Permanant_Address'] . '</td>
 						<td>' . $row['Temporary_Address'] . '</td>
-						<td><button class="btn btn-dark shadow" id="' . $row['ID'] . '">Remove</button></td>
+						<td><button class="btn btn-dark" id="' . $row['ID'] . '">Remove</button></td>
 					  </tr>';
       }
       ?>
     </tbody>
   </table>
-
 </div>
 
+<script type="text/javascript" src="/assets/js/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="/assets/js/bootstrap.js"></script>
+
+
+<script>
+  $(document).ready(function() {
+    $("button").click(function(event) {
+      var id = event.target.id;
+      if ($.isNumeric(id)) {
+        if (confirm("Are sure you want to delete this contact?")) {
+          $.ajax({
+            url: '/controllers/delete/',
+            type: 'POST',
+            data: 'ID=' + id,
+            async: false,
+            success: function(data) {
+              var objID = '#' + id;
+              $('#deleteRes').html(data);
+              $(objID).hide(500);
+              setTimeout(function() {
+                $('#deleteRes').text('');
+              }, 2000);
+            },
+          });
+        }
+      }
+      return false;
+    });
+  });
+</script>
 
 <?php include_once('../components/footer.php') ?>

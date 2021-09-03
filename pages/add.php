@@ -31,7 +31,7 @@ $personsCount = $row[0];
  </div>
  <div class="row mt-2 text-white p-2">
   <div class="col-sm-6">
-   <form method="POST" action="../controllers/add.php">
+   <form method="POST" action="/controllers/add.php">
     <div class="row mb-3">
      <div class="col-sm-3">
       <label>Name</label>

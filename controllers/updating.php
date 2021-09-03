@@ -26,10 +26,10 @@ $result = $array;
     <div class="col-sm-12 mt-5">
       <nav class="navbar navbar-expand-lg bg-dark rounded mt-5" style="box-shadow:3px 3px 4px rgba(0,0,0,0.2);">
         <ul class="navbar-nav mb-2 mb-lg-0">
-          <li><a href="/pages/dashboard/" class="nav-link active text-white">Home</a></li>
-          <li><a href="/pages/add/" class="nav-link active text-white">Add</a></li>
-          <li><a href="/pages/update/" class="nav-link active text-primary">Update</a></li>
-          <li><a href="/pages/info/" class="nav-link active text-white">Info</a></li>
+          <li><a href="/pages/dashboard.php" class="nav-link active text-white">Home</a></li>
+          <li><a href="/pages/add.php" class="nav-link active text-white">Add</a></li>
+          <li><a href="/pages/update.php" class="nav-link active text-primary">Update</a></li>
+          <li><a href="/pages/info.php" class="nav-link active text-white">Info</a></li>
           <li><a href="/pages/logout.php" class="nav-link active text-white">Logout</a></li>
         </ul>
       </nav>
@@ -70,7 +70,7 @@ $result = $array;
 
   <div class="row text-white p-2">
     <div class="col-sm-6">
-      <form method="POST" action="/controllers/update/">
+      <form method="POST" action="/controllers/update.php">
         <div class="row mb-3">
           <div class="col-sm-3">
             <label>Name</label>

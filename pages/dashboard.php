@@ -73,7 +73,7 @@ $personsCount = $row[0];
       if ($.isNumeric(id)) {
         if (confirm("Are sure you want to delete this contact?")) {
           $.ajax({
-            url: '/controllers/delete/',
+            url: '/controllers/delete.php',
             type: 'POST',
             data: 'ID=' + id,
             async: false,

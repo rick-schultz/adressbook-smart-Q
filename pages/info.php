@@ -12,26 +12,25 @@ $personsCount = $row[0];
 <?php include_once('../components/header.php') ?>
 
 <style>
- <?php include_once('../assets/css/bootstrap.css') ?><?php include_once('../assets/css/index.css') ?>
+ <?php include_once('../assets/css/bootstrap.css') ?>
 </style>
 
 <div class="container ">
- <div class="row justify-content-center">
-  <div class="col-sm-6 mt-5">
+ <div class="row">
+  <div class="col-sm-12 mt-5">
    <nav class="navbar navbar-expand-lg bg-dark rounded mt-5" style="box-shadow:3px 3px 4px rgba(0,0,0,0.2);">
     <ul class="navbar-nav mb-2 mb-lg-0">
      <li><a href="/pages/dashboard/" class="nav-link active text-white">Home</a></li>
      <li><a href="/pages/add/" class="nav-link active text-white">Add</a></li>
      <li><a href="/pages/update/" class="nav-link active text-white">Update</a></li>
-     <li><a href="/pages/view/" class="nav-link active text-primary">View All</a></li>
+     <li><a href="/pages/info/" class="nav-link active text-primary">Info</a></li>
      <li><a href="/pages/logout.php" class="nav-link active text-white">Logout</a></li>
     </ul>
    </nav>
   </div>
  </div>
- <div class="row mt-2 justify-content-center text-white p-2">
+ <div class="row mt-2 text-white p-2">
   <div class="col-sm-6">
-   <h4 class="font">Welcome to your address book, <?php echo $_SESSION['First_Name'] . ' ' . $_SESSION['Last_Name']; ?>!</h4>
    <table class="table borderless text-white">
     <tr>
      <td>Name</td>

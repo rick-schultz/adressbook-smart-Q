@@ -16,20 +16,20 @@ $personsCount = $row[0];
 </style>
 
 <div class="container ">
- <div class="row justify-content-center">
-  <div class="col-sm-6 mt-5">
+ <div class="row">
+  <div class="col-sm-12 mt-5">
    <nav class="navbar navbar-expand-lg bg-dark rounded mt-5" style="box-shadow:3px 3px 4px rgba(0,0,0,0.2);">
     <ul class="navbar-nav mb-2 mb-lg-0">
      <li><a href="/pages/dashboard/" class="nav-link active text-white">Home</a></li>
      <li><a href="/pages/add/" class="nav-link active text-primary">Add</a></li>
      <li><a href="/pages/update/" class="nav-link active text-white">Update</a></li>
-     <li><a href="/pages/view/" class="nav-link active text-white">View All</a></li>
+     <li><a href="/pages/info/" class="nav-link active text-white">Info</a></li>
      <li><a href="/pages/logout.php" class="nav-link active text-white">Logout</a></li>
     </ul>
    </nav>
   </div>
  </div>
- <div class="row mt-2 justify-content-center text-white p-2">
+ <div class="row mt-2 text-white p-2">
   <div class="col-sm-6">
    <form method="POST" action="../controllers/add.php">
     <div class="row mb-3">

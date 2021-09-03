@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['UID'])) {
-  header("Location:dashboard/");
+  header("Location:../pages/dashboard/");
 }
 ?>
 
@@ -10,6 +10,7 @@ if (isset($_SESSION['UID'])) {
 <style>
   <?php include_once('./assets/css/index.css') ?>
 </style>
+
 
 <div class="login-dark text-center">
   <form method="POST" action="./controllers/login.php">

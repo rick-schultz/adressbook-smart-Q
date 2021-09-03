@@ -20,7 +20,7 @@ if (strlen($username) > 0 && strlen(trim($_POST['password'])) > 0) {
   $dateTime = date('d F Y h:i A');
   mysqli_query($con, "UPDATE users SET Last_Login='$dateTime' WHERE Username='$username'");
   //success
-  header("Location:../pages/dashboard/");
+  header("Location:../pages/dashboard.php");
  } else {
   echo '<p style="color: #D8000C;font-weight: bold;">Invalid Credentials.</p>';
  }

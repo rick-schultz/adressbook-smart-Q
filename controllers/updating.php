@@ -38,7 +38,7 @@ $result = $array;
 
   <div class="row mt-2 text-white p-2">
     <div class="col-sm-6">
-      <form method="POST" action="/controllers/updating/">
+      <form method="POST" action="/controllers/updating.php">
         <div class="row">
           <?php
           $usersID = $_SESSION['UID'];

@@ -16,22 +16,20 @@ $result = $array;
 
 <?php include_once('../components/header.php') ?>
 
-<style>
-  <?php include_once('../assets/css/bootstrap.css') ?>
-</style>
-
 <div class="container">
 
   <div class="row">
     <div class="col-sm-12 mt-5">
-      <nav class="navbar navbar-expand-lg bg-dark rounded mt-5" style="box-shadow:3px 3px 4px rgba(0,0,0,0.2);">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li><a href="/pages/dashboard.php" class="nav-link active text-white">Home</a></li>
-          <li><a href="/pages/add.php" class="nav-link active text-white">Add</a></li>
-          <li><a href="/pages/update.php" class="nav-link active text-primary">Update</a></li>
-          <li><a href="/pages/info.php" class="nav-link active text-white">Info</a></li>
-          <li><a href="/pages/logout.php" class="nav-link active text-white">Logout</a></li>
-        </ul>
+      <nav class="navbar navbar-expand navbar-dark bg-dark rounded mt-5">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li><a href="/pages/dashboard.php" class="nav-link active text-white">Home</a></li>
+            <li><a href="/pages/add.php" class="nav-link active text-white">Add</a></li>
+            <li><a href="/pages/update.php" class="nav-link active text-primary">Update</a></li>
+            <li><a href="/pages/info.php" class="nav-link active text-white">Info</a></li>
+            <li><a href="/pages/logout.php" class="nav-link active text-white">Logout</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
   </div>
@@ -52,7 +50,6 @@ $result = $array;
             </div>
             <div class="form-group col-sm-6">
               <select class="form-control" id="name" name="name">
-                <option value=0>Choose...</option>
                 <?php
                 while ($row = mysqli_fetch_array($fetch)) {
                   echo '<option value="' . $row['Name'] . '">' . $row['Name'] . '</option>';

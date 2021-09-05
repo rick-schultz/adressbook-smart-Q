@@ -14,9 +14,9 @@ if (strlen($fn) > 0 && strlen($ln) > 0 && strlen($username) > 0 && strlen(trim($
   if (mysqli_error($con) == "") {
    header("Location:/");
   } else {
-   echo '<p style="color: #D8000C;font-weight: bold;">Something Went Wrong, Try Again.</p>';
+   header("Location:/");
   }
  }
 } else {
- echo '<p style="color: #D8000C;font-weight: bold;">Please Fill All The Details.</p>';
+ header("Location:/");
 }

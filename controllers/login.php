@@ -22,8 +22,8 @@ if (strlen($username) > 0 && strlen(trim($_POST['password'])) > 0) {
   //success
   header("Location:../pages/dashboard.php");
  } else {
-  echo '<p style="color: #D8000C;font-weight: bold;">Invalid Credentials.</p>';
+  header("Location:/");
  }
 } else {
- echo '<p style="color: #D8000C;font-weight: bold;">Please Fill All The Details.</p>';
+ header("Location:/");
 }
